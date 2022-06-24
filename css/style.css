@@ -257,7 +257,8 @@ footer{
 
 .form-register {
     width: 400px;
-    background: #24303c;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(244,0,0,1) 100%);    
     padding: 30px;
     margin: auto;
     margin-top: 100px;
@@ -285,6 +286,7 @@ footer{
   }
   
   .form-register p {
+    
     height: 40px;
     text-align: center;
     font-size: 12px;
@@ -311,7 +313,8 @@ footer{
     font-size: 16px;
     cursor: pointer;
   }
-  
+  /* animaciones */
+
 
   /* Full responsive */
 
@@ -326,9 +329,13 @@ footer{
     .cuerpo-card{
         grid-template-columns: repeat(2,1fr);
     }
+
+    .videos{
+        grid-template-columns: repeat(2,1fr);
+    }
  }
 
- @media (max-width: 500px) {
+ @media (max-width: 700px) {
     .cuerpo-card{
         grid-template-columns: repeat (1,1fr);
     }
@@ -337,6 +344,12 @@ footer{
         text-align: center;
     }
 
-
- }
+    .videos{
+        justify-content: center;
+        margin: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        row-gap: 20px;
+    }
+}
 
